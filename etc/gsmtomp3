@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#echo $1 $2 $3 >> /audio/gsmlog
+
+#cp $1 $1.tmp2
+##sox $1 -s $1.wav
+/usr/local/bin/lame --brief  -b 64  $1 $2 #2>> /audio/gsmlog 
+#rm -f $1.wav
+rm -f $1 
+#echo $2

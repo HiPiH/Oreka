@@ -34,7 +34,7 @@
         <CommandProcessingCommand>gsmtomp3 [IN] [OUT]</CommandProcessingCommand>
 	<ExtentionOut>mp3</ExtentionOut>
 	<AudioFileOwner>tomcat</AudioFileOwner>
-	<AudioFileGroup>tomcat</AudioFileGroup>
+	<AudioFileGroup>root</AudioFileGroup>
 	<AudioFilePermissions>644</AudioFilePermissions>
 	<!--<TapeDurationMinimumSec>3</TapeDurationMinimumSec>-->
 
@@ -52,6 +52,9 @@
 
    <VoIpPlugin>
                 <PcapSocketBufferSize>8388608</PcapSocketBufferSize>
+
+<RtpSessionTimeoutSec>1</RtpSessionTimeoutSec>
+<RtpSessionWithSignallingTimeoutSec>1</RtpSessionWithSignallingTimeoutSec>
                 <!--SkinnyTcpPort>1720</SkinnyTcpPort-->
 
                 <!--queuemetrics integration, uncomment the following line-->
